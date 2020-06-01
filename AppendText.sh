@@ -13,6 +13,6 @@
 		>&2 echo "${Marker}"
 		>&2 echo 'Config not found. Appending...'
 		touch "${File}" &&
-		echo $'\n'"${Marker}"$'\n'"${Text}" >> "${File}"
+		echo -E $'\n'"${Marker}"$'\n'"${Text}" >> "${File}"
 	}
 )
